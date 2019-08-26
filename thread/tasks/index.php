@@ -13,6 +13,8 @@ echo '>>> Main Start' . PHP_EOL;
 
 $task1 = new Task1(1);
 $task2 = new Task2(20);
+
+// use start() to run as thread, not run()
 $task1->start();
 $task2->start();
 
